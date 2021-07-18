@@ -6,6 +6,12 @@
     <base href="http://localhost:63342/2021Juli/index.html?_ijt=39n9t4q4a71t4a1beoi61pb6bt" target="_blank"> <!-- sudah canggih, browser otomatis nyari base href ini kalaupun tidak didefinisikan -->
 
     <title>Basic Web HTML5</title>
+
+    <style>
+        var {
+        font-style: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,7 +21,7 @@
         <dfn>
             <abbr title="Teknik Informatika">IF</abbr>
         </dfn>
-        yang merupakan bagian dari prodi <i>Computer Science</i>, kelasnya "Z" atau sesi sore ke malam, biasanya diikuti oleh karyawan-karyawan.
+        yang merupakan bagian dari prodi <i>Computer Science</i>, kelasnya "Z" atau sesi sore ke malam, biasanya diikuti oleh karyawan-karyawan yang baru pulang <sub> kerja dari kantor</sub>.
     </p>
 
     <article>
@@ -32,30 +38,67 @@
     <article>
         <h3>Kucing Manis</h3>
         <p>Di kampus ini melintas beberapa kucing liar yang ada di sekitar wilayah kampus, mereka suka sekali ikut perkuliahan, sungguh lucu bukan. Ini contoh suara kucing <br>
-            <img src="asset/stickman.gif" width="40" height="40" alt="Kucing Stickman">
-            <audio controls autoplay muted loop>
-<!-- file tidak ditambahkan <source src="asset/Cat.ogg" type="audio/ogg">-->
+            <img alt="Kucing Stickman" height="40" src="asset/stickman.gif" width="40">
+            <audio autoplay controls loop muted>
+                <!-- file tidak ditambahkan <source src="asset/Cat.ogg" type="audio/ogg">-->
                 <source src="asset/Cat.mp3" type="audio/mpeg">
                 Seharusnya bisa berbunyi jika kontrol di tekan, jika tidak mungkin file audio tidak ditemukan!
             </audio>
-            <br> Disclaimer: seluruh aset diambil dari google yang bisa jadi terkena copyright tapi semoga tidak kena karena sudah dipilah file yang gratis.
+            <br> Disclaimer: seluruh aset diambil dari google yang bisa jadi terkena <var> copyright </var>tapi semoga tidak kena karena sudah dipilah file yang gratis.
         </p>
+        Lilis juga suka kucing dan memiliki beberapa generasi kucing diantaranya:
+        <nav>
+            <ol start="0">
+                <li>Beduk</li>
+                <li>Lorek</li>
+                <li>Moli</li>
+            </ol>
+        </nav>
     </article>
 
     <aside>
         <h4>Sekilas Profil Pemberi Rekomendasi</h4>
         <p>Bu Dewi, salah satu rekan di kantor tempat Lilis bekerja sebelum memutuskan untuk belajar di kampus STMIK, alasannya dia memiliki teman yang berprofesi sebagai dosen pada kampus tersebut.</p>
+        <button type="button" onclick="alert('Nama Lengkap : Dewi Rosdiani')"> Tekan! </button>
+        <button type="button" autofocus="true" disabled>Profil Lengkap</button>
     </aside>
 
     <p>Untuk informasi lebih lanjut tentang kampus Lilis dapat mengunjungi alamat berikut:</p>
     <address>
-    <h4>
-        <bdo dir="rtl"> gnudnaB kimA KIMTS</bdo>
-    </h4>
-        Jalan Jakarta No. 28,<br>
-        Kelurahan Kebonwaru,<br>
-        Kecamatan Batununggal,<br>
-        Kota Bandung
+        <h4>
+            <bdo dir="rtl"> gnudnaB kimA KIMTS</bdo>
+        </h4>
+            Jalan Jakarta No. 28,<br>
+            Kelurahan Kebonwaru,<wbr>
+            Kecamatan Batununggal,<wbr><br>
+            Kota Bandung
     </address>
+    <code>
+        header
+        footer
+    </code>
+
+    <table>
+        <caption style="caption-side:bottom">CAPT</caption>
+        <thead>
+            <td>Judul Lagu</td>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bunga - Bondan prakoso</td>
+        </tr>
+        </tbody>
+    </table>
+    <label>Progress Artikel</label>
+    <progress value="20" max="100">20%</progress>
+    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 80, 100);
+    </script>
+
 </body>
 </html>
